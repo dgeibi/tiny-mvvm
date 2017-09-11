@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tiny MVVM</title>
+</head>
+
+<body>
+  <div id='app'>
+    <p>
+      Hello, {{ male ? 'Mr' : 'Miss' }} {{ name }}
+    </p>
+  </div>
+  name: <input data-bind="name" />
+  <br /> male: <input type="checkbox" data-bind="male" />
+</body>
+<script src="tiny-mvvm.js"></script>
+<script>
+  const appData = {
+    name: 'nobody',
+  }
+  bindViewToData(document.getElementById('app'), appData)
+</script>
+
+</html>

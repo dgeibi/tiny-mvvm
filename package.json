@@ -1,0 +1,20 @@
+{
+  "name": "tiny-mvvm",
+  "version": "0.0.1",
+  "description": "tiny mvvm",
+  "main": "tiny-mvvm.js",
+  "private": true,
+  "author": "dgeibi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgeibi/tiny-mvvm.git"
+  },
+  "keywords": [
+    "mvvm"
+  ],
+  "bugs": {
+    "url": "https://github.com/dgeibi/tiny-mvvm/issues"
+  },
+  "homepage": "https://github.com/dgeibi/tiny-mvvm#readme"
+}
