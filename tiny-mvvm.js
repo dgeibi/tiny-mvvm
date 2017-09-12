@@ -2,10 +2,8 @@
 
 function getExprs(str) {
   const expressions = []
-  str.replace(/{{([^}]*)}}/g, ($0, $1) => {
-    if ($1) {
-      expressions.push($1)
-    }
+  str.replace(/{{([^}]+)}}/g, ($0, $1) => {
+    expressions.push($1)
   })
   return expressions
 }
@@ -22,7 +20,7 @@ function render(template, data) {
 
   return expressions
     .map(expr => evalExpr(data, expr))
-    .reduce((x, ev) => x.replace(/{{[^}]*}}/, ev), template)
+    .reduce((x, ev) => x.replace(/{{[^}]+}}/, ev), template)
 }
 
 function textNodesUnder(el) {
