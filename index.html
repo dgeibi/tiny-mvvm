@@ -19,10 +19,9 @@
 </body>
 <script src="dist/tiny-mvvm.js"></script>
 <script>
-  const appData = {
+  bindViewToData(document.getElementById('app'), {
     name: 'nobody',
-  }
-  bindViewToData(document.getElementById('app'), appData)
+  })
 </script>
 
 </html>
