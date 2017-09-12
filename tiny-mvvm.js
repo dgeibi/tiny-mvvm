@@ -96,4 +96,4 @@ function bindViewToData(el, data) {
   syncAllTextNodes(textNodes, templates, caches)
 }
 
-if (module) module.exports = bindViewToData
+module.exports = bindViewToData

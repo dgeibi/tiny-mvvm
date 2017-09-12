@@ -2,7 +2,7 @@
   "name": "tiny-mvvm",
   "version": "0.0.1",
   "description": "tiny mvvm",
-  "main": "tiny-mvvm.js",
+  "main": "dist/tiny-mvvm.js",
   "private": true,
   "author": "dgeibi",
   "license": "MIT",
@@ -16,5 +16,24 @@
   "bugs": {
     "url": "https://github.com/dgeibi/tiny-mvvm/issues"
   },
-  "homepage": "https://github.com/dgeibi/tiny-mvvm#readme"
+  "scripts": {
+    "dist": "webpack"
+  },
+  "homepage": "https://github.com/dgeibi/tiny-mvvm#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "webpack": "^3.5.6"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "modules": false
+        }
+      ]
+    ]
+  }
 }
